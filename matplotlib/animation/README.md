@@ -1,5 +1,6 @@
 # 简介
-[animation Documentation](https://matplotlib.org/api/animation_api.html?highlight=animation#module-matplotlib.animation)
+[animation 官网](https://matplotlib.org/api/animation_api.html?highlight=animation#module-matplotlib.animation)
+
 matplotlib中制作实时动画的类
 
 ## 示波器
@@ -12,4 +13,8 @@ matplotlib中制作实时动画的类
 
 [点击显示图片](https://coding-net-production-file-ci.codehub.cn/c3c9a260-4b5b-11ea-9e85-634f87425de2.png?sign=735aSl/OlNEfN+5B2LBlA8jXk11hPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNTgxNDgyNzg5JnQ9MTU4MTI2Njc4OSZyPTc4Mjk4MzYxJmY9L2MzYzlhMjYwLTRiNWItMTFlYS05ZTg1LTYzNGY4NzQyNWRlMi5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ==)
 
+## 线性图
 
+[sources](simple_anim.py)
+
+[点击显示图片](https://coding-net-production-file-ci.codehub.cn/592be780-4b5e-11ea-9e85-634f87425de2.png?sign=kYdeSrsJ2B0nnf0m0c5WHCrcWcJhPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNTgxNDgzOTE4JnQ9MTU4MTI2NzkxOCZyPTg5NDgyNTMyJmY9LzU5MmJlNzgwLTRiNWUtMTFlYS05ZTg1LTYzNGY4NzQyNWRlMi5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ==)
