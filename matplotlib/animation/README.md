@@ -1,5 +1,5 @@
 # 简介
-[animation 官网](https://matplotlib.org/api/animation_api.html?highlight=animation#module-matplotlib.animation)
+[animation 官网文档](https://matplotlib.org/api/animation_api.html?highlight=animation#module-matplotlib.animation)
 
 matplotlib中制作实时动画的类
 

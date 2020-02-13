@@ -13,17 +13,20 @@ import matplotlib.patches as patches
 import matplotlib.path as path
 import matplotlib.animation as animation
 
+_Numbers = 50
 # Fixing random state for reproducibility
 np.random.seed(19680801)
 
 # histogram our data with numpy
+# randn 服从正态分布
 data = np.random.randn(1000)
-n, bins = np.histogram(data, 100)
-
+# https://www.cnblogs.com/xubing-613/p/5895548.html
+n, bins = np.histogram(data, _Numbers)
 # get the corners of the rectangles for the histogram
 left = np.array(bins[:-1])
 right = np.array(bins[1:])
 bottom = np.zeros(len(left))
+
 top = bottom + n
 nrects = len(left)
 
@@ -67,12 +70,17 @@ patch = None
 
 def animate(i):
     # simulate new data coming in
-    data = np.random.randn(1000)
-    n, bins = np.histogram(data, 100)
-    top = bottom + n
+    data = np.random.randint(1,340,_Numbers)
+    print(data)
+    # n, bins = np.histogram(data, _Numbers)
+    top = bottom + data
     verts[1::5, 1] = top
     verts[2::5, 1] = top
     return [patch, ]
+
+def init():
+    [patch, ]
+    pass
 
 ###############################################################################
 # And now we build the `Path` and `Patch` instances for the histogram using
@@ -87,5 +95,12 @@ ax.add_patch(patch)
 ax.set_xlim(left[0], right[-1])
 ax.set_ylim(bottom.min(), top.max())
 
-ani = animation.FuncAnimation(fig, animate, 100, repeat=False, blit=True)
+# ani = animation.FuncAnimation(fig, animate, 100, repeat=False, blit=True)
+ani = animation.FuncAnimation(fig=fig,
+                              func=animate,
+                              frames=100,
+                              init_func=init,
+                              interval=500,
+                              blit=False)
 plt.show()
+
