@@ -9,7 +9,9 @@ Python学习项目
     - 
 - [Foundation](#Foundation)
     - python 基本操作，切片，容器
+    
 - [Other](#Others)
+    - 写的一些小程序
 ### matplotlib
 - [matplotlib](matplotlib/README.md)
 

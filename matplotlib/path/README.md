@@ -3,8 +3,7 @@
 
 Matplotlib中处理多段线的主要类
 
-## 椭圆
-[sources](simple_elliptic.py)
+
 
 
 
