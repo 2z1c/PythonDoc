@@ -24,5 +24,4 @@ Python学习项目
 
 ### Others
 - [Others](Others/README.md)
-# 链接
-[图床](https://zhouchengzhu-01.coding.net/p/picture_host/attachment)
+
